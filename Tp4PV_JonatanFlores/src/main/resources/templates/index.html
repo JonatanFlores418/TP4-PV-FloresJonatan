@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="#" data-th-href="@{webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="/css/styles.css">
+	<title>TP4</title>
+</head>
+<body>
+	<header data-th-replace="~{fragments/navbar :: navbar}"></header>
+	<div class="d-flex">
+		<main class="p-2 flex-grow-1 bg-dark text-white">
+			<div id="inicio">
+                <h1>Facultad de Ingeniería</h1>
+                <p class="fw-medium">Una facultad, fundada el 24 de mayo de 1972, con accesibilidad a carreras de pregrado, grado y posgrado.</p>
+                <p class="fw-medium">Nuestra misión es formar profesionales altamente calificados, capaces de enfrentar los retos del mundo moderno y contribuir al desarrollo sostenible de la región y del país.</p>
+                <p class="fw-medium">Contamos con una infraestructura moderna y un cuerpo docente de excelencia, comprometidos con la educación y la investigación.</p>
+            </div>
+            <div id="acerca">
+                <h2>Acerca de</h2>
+                <p class="fw-medium">Las políticas de la Universidad Nacional de Jujuy, y especialmente de la Facultad de Ingeniería, tienden a ampliar el área de influencia y a fortalecer su acción institucional, en respuesta a la demanda social creciente de formación de recursos humanos que contribuyan al desarrollo científico, tecnológico y cultural.</p>
+                <p class="fw-medium">De esta forma, la Facultad se constituyó en vector de desarrollo de la provincia, por cuanto:</p>
+                <ul class="list-group">
+                    <li class="list-group-item bg-dark text-white">Posibilita acceder a títulos universitarios a jóvenes cuya situación económica les impide estudiar fuera de la provincia.</li>
+                    <li class="list-group-item bg-dark text-white">Provee de profesionales de la Ingeniería a las industrias radicadas en la provincia y de profesionales competentes a las diversas reparticiones del estado provincial.</li>
+                    <li class="list-group-item bg-dark text-white">Incorpora a la sociedad profesionales aptos para generar emprendimientos de distinta índole.</li>
+                    <li class="list-group-item bg-dark text-white">Fomenta la investigación y el desarrollo en áreas clave para el crecimiento económico y social.</li>
+                    <li class="list-group-item bg-dark text-white">Establece vínculos con otras instituciones académicas y profesionales, tanto a nivel nacional como internacional.</li>
+                </ul>
+            </div>
+			<div id="carreras">
+                <h2>Carreras</h2>
+                <h3>Carreras de grado:</h3>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item bg-dark text-white flex-fill">Ingeniería Química</li>
+                    <li class="list-group-item bg-dark text-white flex-fill">Ingeniería de Minas</li>
+                    <li class="list-group-item bg-dark text-white flex-fill">Ingeniería Informática</li>
+                </ul>
+                <h3>Carreras de pregrado:</h3>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item bg-dark text-white flex-fill">Analista Programador Universitario</li>
+                    <li class="list-group-item bg-dark text-white flex-fill">Tecnicatura Universitaria en Diseño Integral de Videojuegos</li>
+                    <li class="list-group-item bg-dark text-white flex-fill">Tecnicatura Universitaria en Perforaciones</li>
+                    <li class="list-group-item bg-dark text-white flex-fill">Tecnicatura Universitaria en Energías Renovables</li>
+                </ul>
+                <a class="btn btn-outline-info d-flex p-2 justify-content-center fw-bolder" role="button" href="https://www.fi.unju.edu.ar">Más Información</a>
+            </div>
+            <div id="noticias">
+				<h2>Noticias</h2>
+				<div class="d-flex mb-3">
+					<img class="p-2" src="img/Vacunacion.jpg" alt="Campaña de Vacunación" width="400" height="550">
+					<div class="p-2 align-self-center fw-medium">
+						<h3>Campaña de Vacunación UNJu 2024</h3>
+						<p><strong>Fecha:</strong> Viernes 24 de junio</p>
+						<p><strong>Lugar:</strong> Escuela Superior de Ciencias de la Salud, Alvear 1152</p>
+						<p><strong>Horario:</strong> 13:00 a 15:30</p>
+						<p><strong>Vacunas Disponibles:</strong></p>
+						<ul>
+							<li>COVID-19</li>
+							<li>Antigripal y Neumococo</li>
+							<li>Antitetánica/Doble Adulto</li>
+							<li>Hepatitis B</li>
+						</ul>
+						<p><strong>Información Adicional:</strong> Personas de 9 a 64 años, inclusive con factor de riesgo, presentando certificado médico o documentación que acredite la existencia de condiciones de riesgo.</p>
+						<p><strong>Cronograma de Vacunación:</strong></p>
+						<ul>
+							<li><strong>Viernes 24:</strong> Facultad de Ciencias Económicas, Horario: 9:00 a 12:30 hs</li>
+							<li><strong>Lunes 27:</strong> Facultad de Humanidades y Ciencias Sociales, Horario: 9:00 a 15:30 hs</li>
+							<li><strong>Miércoles 29:</strong> Escuela de Minas, Horario: 9:00 a 15:30 hs</li>
+						</ul>
+						<p>Importante llevar carnet y/o DNI.</p>
+					</div>
+				</div>
+				<div class="d-flex mb-3">
+					<img class="p-2" src="img/Taller2.jpg" alt="Taller de Herramientas Gerenciales para PYMES" width="400" height="550">
+					<div class="p-2 align-self-center fw-medium">
+						<h3>Curso de Extensión: Herramientas Gerenciales para el Desarrollo Estratégico de las PYMES</h3>
+						<p>Inicio: 19 de junio</p>
+						<p>Docente: Tec. Superior Universitario en Recursos Humanos Torres Rocío del Valle</p>
+						<p>Carga horaria: 20 hs. reloj</p>
+						<p>Modalidad: Virtual asincrónico</p>
+						<p>Metodología: Teórico - práctico</p>
+						<p>Duración: 1 mes</p>
+						<p>Requisitos: Secundario completo a partir de los 18 años de edad</p>
+						<p>Destinatarios: Gestores de PYMES, emprendedores, estudiantes de administración o carreras afines y público en general</p>
+					</div>
+				</div>
+				<div class="d-flex mb-3">
+					<img class="p-2" src="img/Taller1.jpg" alt="Taller sobre el Estrés" width="400" height="550">
+					<div class="p-2 align-self-center fw-medium">
+						<h3>Taller de Capacitación: Qué Hacemos con el Estrés en Nuestras Vidas</h3>
+						<p>Destinado a investigadores y personal docente de la FI</p>
+						<p>Temas que compartiremos:</p>
+						<ul>
+							<li>¿Qué es el estrés y cómo afecta en la vida cotidiana de las personas?</li>
+							<li>Estrategias que ayudan a mejorar el manejo de los niveles de estrés y la calidad de vida</li>
+							<li>Importancia del cuidado de la salud mental y su relación con el estrés - Mitos</li>
+							<li>Mindfulness: beneficios para lidiar con el estrés</li>
+							<li>Alimentación saludable e ingesta de alimentos que ayudan a mejorar el estado de salud y los niveles de estrés</li>
+						</ul>
+						<p>Fechas: 12, 19, 26 de junio y 3 de julio de 2024</p>
+						<p>Horario: 10:00 a 11:30 hs</p>
+						<p>Lugar: Aula 25, Facultad de Ingeniería UNJu</p>
+						<p>Modalidad: Presencial con entrega de certificación</p>
+						<p>Formulario de inscripción: <a href="http://forms.gle/5qD3U18dRi63swDU6" target="_blank">http://forms.gle/5qD3U18dRi63swDU6</a></p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<aside data-th-replace="~{fragments/ladoDePagina :: asidde}"></aside>
+	</div>
+	<footer id="contacto" data-th-replace="~{fragments/finalDePagina :: futer}"></footer>
+	<script data-th-src="@{webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>

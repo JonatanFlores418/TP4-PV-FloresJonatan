@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" data-th-href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>navbar</title>
+</head>
+<body>
+	<div data-th-fragment="navbar">
+		<div class="flex-fill">
+			<nav class="navbar bg-body-tertiary bg-info-subtle">
+  				<div class="container-fluid">
+    				<a class="navbar-brand text-info-emphasis fw-bolder" href="https://www.fi.unju.edu.ar">
+     				<img src="img/logo-fi.png" alt="Logo" width="90" height="54" class="d-inline-block align-text-middle">
+      				Facultad de Ingenieria UNJu - 52 Años Educando
+    				</a>
+  				</div>
+			</nav>
+		</div>
+		<div class="flex-fill">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary bg-info-subtle">
+  				<div class="container-fluid">
+      				<ul class="navbar-nav">
+        				<li><a class="nav-link fw-bolder text-info-emphasis" href="/">Inicio</a></li>
+        				<li><a class="nav-link fw-bolder text-info-emphasis" href="#acerca">Acerca de</a></li>
+        				<li><a class="nav-link fw-bolder text-info-emphasis" href="#carreras">Carreras</a></li>
+        				<li><a class="nav-link fw-bolder text-info-emphasis" href="#noticias">Noticias</a></li>
+        				<li><a class="nav-link fw-bolder text-info-emphasis" href="#recursosadicionales">Recursos Adicionales</a></li>
+        				<li><a class="nav-link fw-bolder text-info-emphasis" href="#contacto">Contacto</a></li>
+        				<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle fw-bolder text-info-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            					Lista de Carreras
+          					</a>
+        					<ul class="dropdown-menu">
+        						<li><a class="dropdown-item fw-bolder text-info-emphasis" href="/formularioDeCarreras">Formulario</a></li>
+            					<li><a class="dropdown-item fw-bolder text-info-emphasis" href="/carreras">Listado</a></li>
+        					</ul>
+        				</li>
+        				<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle fw-bolder text-info-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            					Lista de Docentes
+          					</a>
+        					<ul class="dropdown-menu">
+        						<li><a class="dropdown-item fw-bolder text-info-emphasis" href="/formularioDeDocentes">Formulario</a></li>
+            					<li><a class="dropdown-item fw-bolder text-info-emphasis" href="/docentes">Listado</a></li>
+        					</ul>
+        				</li>
+        				<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle fw-bolder text-info-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            					Lista de Alumnos
+          					</a>
+        					<ul class="dropdown-menu">
+        						<li><a class="dropdown-item fw-bolder text-info-emphasis" href="/formularioDeAlumnos">Formulario</a></li>
+            					<li><a class="dropdown-item fw-bolder text-info-emphasis" href="/alumnos">Listado</a></li>
+        					</ul>
+        				</li>
+        				<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle fw-bolder text-info-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            					Lista de Materias
+          					</a>
+        					<ul class="dropdown-menu">
+        						<li><a class="dropdown-item fw-bolder text-info-emphasis" href="/formularioDeMaterias">Formulario</a></li>
+            					<li><a class="dropdown-item fw-bolder text-info-emphasis" href="/materias">Listado</a></li>
+        					</ul>
+        				</li>
+      				</ul>
+  				</div>
+			</nav>
+		</div>
+	</div>
+</body>
+</html>
